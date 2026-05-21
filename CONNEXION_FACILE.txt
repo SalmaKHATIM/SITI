@@ -1,0 +1,184 @@
+╔════════════════════════════════════════════════════════════════════════╗
+║                                                                        ║
+║           🍵 STTIS - Smart Tea Traceability & Intelligence System    ║
+║                        GUIDE D'ACCÈS RAPIDE                          ║
+║                                                                        ║
+╚════════════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 DÉMARRAGE RAPIDE EN 30 SECONDES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Allez à:  http://localhost:3000/demo
+2. Copiez un email et mot de passe
+3. Allez à:  http://localhost:3000/login
+4. Collez et connectez-vous!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+👥 IDENTIFIANTS DE TEST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌─ 👑 ADMIN (Accès Complet) ──────────────────────────────────────────┐
+│                                                                      │
+│ Email:    admin@sttis.tea                                          │
+│ Password: Admin@12345                                              │
+│                                                                      │
+│ ✓ Gestion complète du système                                      │
+│ ✓ Gestion des utilisateurs                                         │
+│ ✓ Audit logs et paramètres                                         │
+│ ✓ Idéal pour explorer TOUTES les fonctionnalités                  │
+│                                                                      │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌─ 🔍 QUALITY MANAGER (Gestion Qualité) ──────────────────────────────┐
+│                                                                      │
+│ Email:    qa@sttis.tea                                             │
+│ Password: QA@12345                                                 │
+│                                                                      │
+│ ✓ Création et suivi de lots                                        │
+│ ✓ Gestion de la qualité                                            │
+│ ✓ Détection d'anomalies                                            │
+│ ✓ Traçabilité complète des batches                                │
+│                                                                      │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌─ 📦 STOCK MANAGER (Gestion Stocks) ─────────────────────────────────┐
+│                                                                      │
+│ Email:    stock@sttis.tea                                          │
+│ Password: Stock@12345                                              │
+│                                                                      │
+│ ✓ Gestion de l'inventaire                                          │
+│ ✓ Mouvements de stock                                              │
+│ ✓ Prédictions de ventes IA                                         │
+│ ✓ Optimisation intelligente des stocks                             │
+│                                                                      │
+└──────────────────────────────────────────────────────────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📍 PAGES PRINCIPALES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Page                Lien                          Description
+─────────────────────────────────────────────────────────────────────
+Accueil           http://localhost:3000/         Page d'accueil
+Identifiants      http://localhost:3000/demo     Voir les identifiants
+Connexion         http://localhost:3000/login    Se connecter
+Inscription       http://localhost:3000/signup   Créer un compte
+Aide              http://localhost:3000/help     Centre d'aide
+
+Une fois connecté(e):
+─────────────────────────────────────────────────────────────────────
+Dashboard         /dashboard                     Métriques principales
+Produits          /dashboard/products            Gestion des produits
+Lots              /dashboard/batches             Suivi des batches
+Stock             /dashboard/stock               Inventaire
+Insights IA       /dashboard/insights            Prédictions & anomalies
+Chat IA           /dashboard/chat                Chatbot NLP
+Paramètres        /dashboard/settings            Profil et sécurité
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📚 DOCUMENTATION COMPLÈTE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Fichier                    Description
+────────────────────────────────────────────────────────────────────
+ACCES_RAPIDE.md           CE GUIDE (vous êtes ici!)
+QUICK_START.md            Guide de démarrage rapide
+TEST_CREDENTIALS.md       Détails sur les identifiants de test
+DATABASE_SETUP.md         Configuration de la base de données
+README.md                 Documentation complète du projet
+DEPLOYMENT.md             Guide de déploiement en production
+PROJECT_SUMMARY.md        Résumé technique complet
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🆘 PROBLÈMES COURANTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problème                    Solution
+────────────────────────────────────────────────────────────────────
+❌ Email/password incorrect  → Copiez depuis /demo (pas d'espaces)
+❌ Connexion impossible      → Videz cache (Ctrl+Shift+Del), F5
+❌ Compte ne se crée pas     → Utilisez les identifiants de test
+❌ Les données ne s'affichent→ Videz cache + rechargez
+❌ Erreur Supabase           → Vérifiez les env vars, consultez /help
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✨ WORKFLOW RECOMMANDÉ (15 minutes)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Étape 1: Récupération des identifiants (2 min)
+  → Allez à http://localhost:3000/demo
+  → Copiez le compte Admin
+
+Étape 2: Connexion (1 min)
+  → Allez à http://localhost:3000/login
+  → Collez l'email et mot de passe
+  → Cliquez "Sign in"
+
+Étape 3: Exploration (10 min)
+  → Explorez le Dashboard
+  → Allez voir les Produits
+  → Vérifiez les Lots et Stock
+  → Regardez les Insights IA
+  → Essayez le Chat IA
+
+Étape 4: Tester d'autres rôles (2 min)
+  → Déconnectez-vous
+  → Reconnectez-vous avec Quality Manager ou Stock Manager
+  → Observez les différences d'accès
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💡 CONSEIL: POURQUOI CHOISIR ADMIN?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Pour explorer STTIS pour la première fois, utilisez le compte ADMIN.
+Vous aurez accès à TOUTES les fonctionnalités et pourrez vraiment
+voir ce que le système peut faire.
+
+Après, vous pouvez tester les autres rôles pour voir les différences
+d'accès et de permissions.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 CAS D'USAGE - Que Tester?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Traçabilité des Lots (5 min)
+  1. Connectez-vous en tant que Quality Manager
+  2. Allez à /dashboard/batches
+  3. Cliquez sur le bouton QR d'un batch
+  4. Générez et téléchargez le QR code
+
+Prédictions IA (5 min)
+  1. Allez à /dashboard/insights
+  2. Cliquez "Générer Prédictions"
+  3. Voir les prédictions de ventes 12 mois
+  4. Consultez les anomalies détectées
+
+Chat IA (5 min)
+  1. Allez à /dashboard/chat
+  2. Posez une question sur les produits ou batches
+  3. L'assistant IA répondra avec des recommandations
+
+Gestion Stock (5 min)
+  1. Connectez-vous en tant que Stock Manager
+  2. Allez à /dashboard/stock
+  3. Consultez les niveaux d'inventaire
+  4. Vérifiez les alertes et seuils
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📞 BESOIN D'AIDE?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Pour des questions, consultez:
+  📖 /help                    - Centre d'aide interactif
+  📄 QUICK_START.md          - Guide de démarrage
+  📄 TEST_CREDENTIALS.md     - Questions fréquentes
+  📄 DATABASE_SETUP.md       - Configuration BD
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Prêt(e)? Commencez maintenant: http://localhost:3000/demo
+
+Bon test! 🍵✨
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

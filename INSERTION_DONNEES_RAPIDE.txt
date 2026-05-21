@@ -1,0 +1,156 @@
+╔════════════════════════════════════════════════════════════════╗
+║                 INSERTION DES DONNÉES STTIS                    ║
+║              Guide Rapide (5 Minutes)                          ║
+╚════════════════════════════════════════════════════════════════╝
+
+📊 VOUS AVEZ:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ DATABASE_SCHEMA.sql   (Crée les 11 tables)
+✓ scripts/02-seed-data.sql (Remplit 550+ enregistrements)
+
+Les données incluent:
+  • 8 utilisateurs
+  • 32 produits de thé
+  • 26 lots de production
+  • 45 commandes de ventes
+  • 14 contrôles de qualité
+  • 8 alertes de stock
+  • 11 prédictions IA
+  • 20 messages de chat
+  • 26 journaux d'audit
+  + Historique, mouvements, etc.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 ÉTAPE 1: CRÉER LES TABLES (2 minutes)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Allez à: https://supabase.com/dashboard
+2. Sélectionnez votre projet
+3. Cliquez: SQL Editor
+4. Cliquez: New Query
+5. Ouvrez: DATABASE_SCHEMA.sql (dans votre projet)
+6. Copiez: TOUT le contenu
+7. Collez: Dans l'éditeur SQL Supabase
+8. Cliquez: Run (bouton vert)
+9. Attendez: 5-10 secondes
+
+✓ Message: "Success. No rows returned"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 ÉTAPE 2: INSÉRER LES DONNÉES (3 minutes)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Retour à: SQL Editor dans Supabase
+2. Cliquez: New Query (nouveau)
+3. Ouvrez: scripts/02-seed-data.sql
+4. Copiez: TOUT le contenu
+5. Collez: Dans l'éditeur SQL
+6. Cliquez: Run
+7. Attendez: 30-60 secondes (beaucoup de données!)
+
+✓ Message: "Success"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ VÉRIFICATION (1 minute)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Dans Supabase, allez à: Table Editor
+
+Vous devez voir:
+  ✓ users (8 enregistrements)
+  ✓ tea_products (32 enregistrements)
+  ✓ batches (26 enregistrements)
+  ✓ quality_checks (14 enregistrements)
+  ✓ sales_orders (45 enregistrements)
+  ✓ stock_movements (23 enregistrements)
+  ✓ stock_alerts (8 enregistrements)
+  ✓ predictions (11 enregistrements)
+  ✓ chat_messages (20 enregistrements)
+  ✓ audit_logs (26 enregistrements)
+  ✓ batch_history (19 enregistrements)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📱 DÉMARRER L'APPLICATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+npm run dev
+
+Puis allez à: http://localhost:3000
+
+Vous verrez:
+  • Page d'accueil avec images générées
+  • Page de connexion
+  • Dashboard avec les données
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔐 COMPTES TEST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Email: admin@sttis.local
+Mot de passe: Admin@123456
+
+Email: qa@sttis.local
+Mot de passe: QA@123456
+
+Email: stock@sttis.local
+Mot de passe: Stock@123456
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 GUIDES COMPLETS DISPONIBLES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✓ GUIDE_INSERTION_DONNEES.md      (551 lignes)
+  → Instructions détaillées
+  → Exemples de code React
+  → Dépannage
+
+✓ RESUME_DONNEES.md               (389 lignes)
+  → Visualisation des données
+  → Statistiques
+  → Analyse financière
+
+✓ ACCES_RAPIDE_BASE_DONNEES.md    (444 lignes)
+  → Requêtes SQL rapides
+  → 3 façons d'accéder aux données
+  → Questions fréquentes
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚡ COMMANDES RAPIDES SQL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Voir tous les produits:
+SELECT * FROM public.tea_products;
+
+Voir les commandes livrées:
+SELECT * FROM public.sales_orders WHERE status = 'delivered';
+
+Voir les alertes actives:
+SELECT * FROM public.stock_alerts WHERE is_resolved = FALSE;
+
+Voir les contrôles de qualité:
+SELECT * FROM public.quality_checks ORDER BY overall_score DESC;
+
+Voir le revenu total:
+SELECT SUM(total_usd) FROM public.sales_orders;
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎉 C'EST TOUT!
+
+Vous avez maintenant:
+  ✓ 11 tables remplies
+  ✓ 550+ enregistrements interconnectés
+  ✓ Données réalistes pour tester
+  ✓ Base de données prête pour production
+
+Consultez GUIDE_INSERTION_DONNEES.md pour plus de détails!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

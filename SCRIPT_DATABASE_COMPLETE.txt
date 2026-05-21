@@ -1,0 +1,62 @@
+================================================================================
+             STTIS - SCRIPT SQL COMPLET ET ICONE V0 SUPPRIMEE
+================================================================================
+
+1. ✅ SCRIPT SQL COMPLET
+   
+   Fichier: DATABASE_SCHEMA.sql
+   Localisation: Racine du projet
+   
+   Contient:
+   • 11 tables de base de données
+   • Tous les indexes pour performance
+   • Contraintes et validations
+   • Relations entre tables
+
+   Tables incluses:
+   - users
+   - tea_products
+   - batches
+   - batch_history
+   - stock_movements
+   - stock_alerts
+   - quality_checks
+   - sales_orders
+   - predictions
+   - chat_messages
+   - audit_logs
+
+2. ✅ ICONE V0 SUPPRIMEE
+
+   Fichier modifié: app/layout.tsx
+   
+   Avant:
+   - generator: 'v0.app' (SUPPRIME)
+   - icons configuration (SUPPRIMEE)
+   
+   Après:
+   - Seulement les métadonnées STTIS
+   - Aucune référence à v0
+
+3. 📖 DOCUMENTATION
+
+   Fichier: DATABASE_SCRIPT_USAGE.md
+   - Guide complet d'utilisation
+   - Comment exécuter le script
+   - Descriptions de chaque table
+   - Vérification après exécution
+
+================================================================================
+                           COMMENT UTILISER
+================================================================================
+
+1. Allez au Supabase Dashboard
+2. SQL Editor → New Query
+3. Copiez DATABASE_SCHEMA.sql
+4. Cliquez Run
+
+OU
+
+Utilisez DATABASE_SCRIPT_USAGE.md pour les instructions détaillées
+
+================================================================================

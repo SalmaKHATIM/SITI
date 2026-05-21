@@ -1,0 +1,23 @@
+[project]
+name = "sttis-backend"
+version = "0.1.0"
+description = "STTIS AI/ML Backend - Smart Tea Traceability & Intelligence System"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi==0.104.1",
+    "uvicorn==0.24.0",
+    "python-dotenv==1.0.0",
+    "supabase==2.3.2",
+    "scikit-learn==1.3.2",
+    "pandas==2.1.1",
+    "numpy==1.26.2",
+    "transformers==4.35.2",
+    "torch==2.1.1",
+    "pydantic==2.5.0",
+    "httpx==0.25.2",
+    "python-dateutil==2.8.2",
+]
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"

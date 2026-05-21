@@ -1,0 +1,50 @@
+================================================================================
+STTIS - INSTRUCTIONS DE CONNEXION SIMPLES
+================================================================================
+
+ÉTAPE 1: OUVRIR LA PAGE DE CONNEXION
+→ http://localhost:3000/login
+
+ÉTAPE 2: CHOISIR UN COMPTE
+
+COMPTE ADMIN (Recommandé):
+  Email:    admin@sttis.local
+  Password: Admin@123456
+
+COMPTE QA (Responsable Qualité):
+  Email:    qa@sttis.local
+  Password: QA@123456
+
+COMPTE STOCK (Responsable Stocks):
+  Email:    stock@sttis.local
+  Password: Stock@123456
+
+ÉTAPE 3: CLIQUER SUR "SE CONNECTER"
+
+================================================================================
+NOTES IMPORTANTES
+================================================================================
+
+✓ Aucune base de données requise pour se connecter
+✓ Les identifiants sont stockés dans "credentials.json"
+✓ La session est sauvegardée en localStorage
+✓ Les pages /dashboard/* sont protégées automatiquement
+✓ Cliquez sur "Se déconnecter" pour se déloguer
+
+================================================================================
+FICHIERS AVEC IDENTIFIANTS
+================================================================================
+
+- credentials.json       (Format JSON)
+- CREDENTIALS.csv       (Format CSV)
+- CREDENTIALS.txt       (Format texte)
+- SIMPLE_SETUP.md       (Documentation)
+
+================================================================================
+ASSISTANCE
+================================================================================
+
+Fichier: /help → Page d'aide intégrée à l'app
+Docs:    SIMPLE_SETUP.md → Documentation technique
+
+================================================================================

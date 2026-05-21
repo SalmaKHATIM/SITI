@@ -1,0 +1,189 @@
+╔════════════════════════════════════════════════════════════════╗
+║                   STTIS - MOTS DE PASSE                         ║
+║              Smart Tea Traceability & Intelligence              ║
+╚════════════════════════════════════════════════════════════════╝
+
+📍 OÙ SONT LES MOTS DE PASSE?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Fichier: /credentials.json (à la racine du projet)
+Format: JSON
+Lecture: Oui
+Édition: Oui (redémarrage requis)
+
+
+🔐 LES 3 COMPTES DE TEST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+COMPTE 1 - ADMINISTRATEUR
+┌────────────────────────────────────────────────────────────────┐
+│ Email:    admin@sttis.local                                    │
+│ Mot de passe: Admin@123456                                     │
+│ Rôle:     Administrateur (Accès complet)                       │
+│ Permissions: user_management, products, batches, stock, etc.   │
+└────────────────────────────────────────────────────────────────┘
+
+COMPTE 2 - RESPONSABLE QUALITÉ
+┌────────────────────────────────────────────────────────────────┐
+│ Email:    qa@sttis.local                                       │
+│ Mot de passe: QA@123456                                        │
+│ Rôle:     Quality Manager (Contrôle qualité)                   │
+│ Permissions: batch_view, quality_check, traceability, etc.     │
+└────────────────────────────────────────────────────────────────┘
+
+COMPTE 3 - RESPONSABLE STOCKS
+┌────────────────────────────────────────────────────────────────┐
+│ Email:    stock@sttis.local                                    │
+│ Mot de passe: Stock@123456                                     │
+│ Rôle:     Stock Manager (Gestion stocks)                       │
+│ Permissions: stock_view, stock_edit, stock_alerts, etc.        │
+└────────────────────────────────────────────────────────────────┘
+
+
+🚀 COMMENT SE CONNECTER?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Démarrer l'application
+   $ npm run dev
+
+2. Ouvrir le navigateur
+   URL: http://localhost:3000/login
+
+3. Entrer les identifiants
+   Email: admin@sttis.local
+   Mot de passe: Admin@123456
+
+4. Cliquer sur "Se connecter"
+   → Vous serez redirigé vers le dashboard
+
+
+📁 FICHIERS D'AUTHENTIFICATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. /credentials.json
+   ↳ Contient les 3 comptes de test avec mots de passe
+   ↳ Format JSON
+   ↳ À éditer pour modifier les mots de passe
+
+2. /lib/json-auth.ts
+   ↳ Logique d'authentification (30 lignes)
+   ↳ Fonctions: authenticateUser(), logoutUser(), getCurrentUser()
+   ↳ Sauvegarde dans localStorage
+
+3. /lib/auth-provider.tsx
+   ↳ Context React pour authentification
+   ↳ Hook: useAuth() pour accéder à l'utilisateur
+   ↳ Protège les routes du dashboard
+
+4. /app/login/page.tsx
+   ↳ Formulaire de connexion
+   ↳ Utilise authenticateUser()
+
+
+🔧 COMMENT MODIFIER UN MOT DE PASSE?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Ouvrir /credentials.json
+
+2. Trouver le compte à modifier:
+   "email": "admin@sttis.local",
+   "password": "Admin@123456"
+
+3. Changer le mot de passe:
+   "password": "NouveauMotDePasse@123"
+
+4. Sauvegarder le fichier
+
+5. Redémarrer l'application (Ctrl+C, puis npm run dev)
+
+6. Se connecter avec le nouveau mot de passe
+
+
+➕ COMMENT AJOUTER UN NOUVEAU COMPTE?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Ouvrir /credentials.json
+
+2. Ajouter dans la liste "accounts":
+
+{
+  "id": 4,
+  "role": "Sales Manager",
+  "role_fr": "Responsable Ventes",
+  "email": "sales@sttis.local",
+  "password": "Sales@123456",
+  "permissions": ["sales_view", "sales_edit", ...]
+}
+
+3. Sauvegarder et redémarrer l'app
+
+4. Vous pouvez maintenant vous connecter avec:
+   Email: sales@sttis.local
+   Mot de passe: Sales@123456
+
+
+🛡️ SÉCURITÉ - IMPORTANT!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚠️ CE SYSTÈME N'EST QUE POUR LE DÉVELOPPEMENT!
+
+✓ Bon pour:
+  - Développement local
+  - Tests et démos
+  - Prototypage rapide
+
+✗ Mauvais pour:
+  - Production
+  - Applications en ligne
+  - Données sensibles
+
+Pour la production, utilisez:
+  - Supabase Auth ✓ (Recommandé)
+  - Auth0
+  - NextAuth.js
+  - Clerk
+
+
+💾 STOCKAGE DES DONNÉES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Quand vous vous connectez:
+1. Les identifiants sont vérifiés dans credentials.json
+2. L'utilisateur est sauvegardé dans localStorage
+3. Un token est créé pour la session
+4. Vous pouvez accéder à useAuth() partout
+
+localStorage contient:
+- sttis_user: JSON de l'utilisateur
+- sttis_auth_token: Token de session
+
+
+📞 DÉPANNAGE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Q: "Email ou mot de passe invalide"
+A: Vérifiez que vous avez copié exactement l'email et mot de passe
+
+Q: Je me suis connecté mais je vois /login
+A: Redémarrez l'app (Ctrl+C, npm run dev)
+
+Q: Mes modifications de credentials.json ne fonctionnent pas
+A: Redémarrez l'application
+
+Q: Où est mon email/mot de passe après fermeture du navigateur?
+A: Il est dans localStorage et persiste tant que vous ne vous déconnectez pas
+
+
+🎉 TOUT EST PRÊT!
+
+Vous pouvez maintenant:
+✓ Vous connecter avec les 3 comptes
+✓ Modifier les mots de passe dans credentials.json
+✓ Ajouter de nouveaux comptes
+✓ Utiliser useAuth() dans vos composants
+
+═══════════════════════════════════════════════════════════════════
+
+Pour plus d'infos, lisez: GUIDE_AUTHENTIFICATION.md
+
+═══════════════════════════════════════════════════════════════════

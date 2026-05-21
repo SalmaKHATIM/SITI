@@ -1,0 +1,48 @@
+╔════════════════════════════════════════════════════════════╗
+║                 STTIS - START HERE                         ║
+║   Smart Tea Traceability & Intelligence System             ║
+╚════════════════════════════════════════════════════════════╝
+
+📋 QUICK SETUP (Follow in order):
+
+1️⃣  ENVIRONMENT VARIABLES
+   Create .env.local file with your Supabase keys
+   → See SETUP_COMPLETE.md for details
+
+2️⃣  DATABASE
+   Copy DATABASE_SCHEMA.sql content
+   Run in Supabase → SQL Editor
+   → See DATABASE_SCRIPT_USAGE.md for details
+
+3️⃣  START SERVER
+   npm run dev
+   → Open http://localhost:3000
+
+4️⃣  LOGIN
+   Email:    admin@sttis.local
+   Password: Admin@123456
+
+🎨 DESIGN FEATURES:
+   ✓ Glassmorphism effects
+   ✓ Premium gradients
+   ✓ Smooth animations
+   ✓ Responsive layout
+   ✓ Dark/Light mode support
+
+📊 FEATURES AVAILABLE:
+   ✓ Tea Products Management
+   ✓ Batch Traceability
+   ✓ QR Code Generation
+   ✓ Stock Management
+   ✓ Sales Forecasting (AI)
+   ✓ Anomaly Detection
+   ✓ Chat Assistant (NLP)
+   ✓ Role-Based Access
+
+📚 DOCUMENTATION:
+   - SETUP_COMPLETE.md (Recommended first!)
+   - SUPABASE_SETUP.md
+   - DATABASE_SCRIPT_USAGE.md
+   - CREDENTIALS.json (Test accounts)
+
+🚀 Let's build something amazing!

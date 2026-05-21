@@ -1,0 +1,28 @@
+================================================================================
+                    IDENTIFIANTS DE CONNEXION STTIS
+================================================================================
+
+COMPTE 1 - ADMIN (ACCÈS COMPLET)
+Email:    admin@sttis.local
+Mot de passe: Admin@123456
+
+COMPTE 2 - QUALITÉ
+Email:    qa@sttis.local
+Mot de passe: QA@123456
+
+COMPTE 3 - STOCKS
+Email:    stock@sttis.local
+Mot de passe: Stock@123456
+
+================================================================================
+COMMENT SE CONNECTER
+================================================================================
+
+1. Aller à: http://localhost:3000/login
+2. Entrer l'email ci-dessus
+3. Entrer le mot de passe ci-dessus
+4. Cliquer "Se connecter"
+
+================================================================================
+RECOMMANDÉ: Utiliser le compte ADMIN pour explorer tout le système
+================================================================================

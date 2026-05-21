@@ -1,0 +1,78 @@
+STTIS - CONFIGURATION RAPIDE SUPABASE
+=====================================
+
+ÉTAPE 1: OBTENIR VOS CLÉS SUPABASE
+-----------------------------------
+
+1. Allez sur https://supabase.com
+2. Connectez-vous à votre compte
+3. Sélectionnez votre projet STTIS
+4. Cliquez sur Settings (⚙️)
+5. Allez à "API" dans le menu de gauche
+6. Vous verrez 3 champs:
+   
+   ✓ Project URL
+   ✓ Anon public (Anon Key)
+   ✓ service_role secret (Service Role Key)
+
+Copiez ces 3 valeurs quelque part!
+
+
+ÉTAPE 2: CRÉER LE FICHIER .env.local
+-------------------------------------
+
+1. À la racine du projet, créez un fichier: .env.local
+2. Ouvrez .env.local.template comme guide
+3. Remplissez les 3 valeurs:
+
+   NEXT_PUBLIC_SUPABASE_URL=votre-url-ici
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=votre-clé-anon-ici
+   SUPABASE_SERVICE_ROLE_KEY=votre-clé-service-ici
+
+4. Sauvegardez le fichier
+
+
+ÉTAPE 3: CRÉER LES TABLES DANS SUPABASE
+----------------------------------------
+
+1. Allez à votre projet Supabase Dashboard
+2. Cliquez sur "SQL Editor" (dans le menu de gauche)
+3. Cliquez sur "New Query"
+4. Ouvrez le fichier DATABASE_SCHEMA.sql
+5. Copiez TOUT le contenu
+6. Collez-le dans Supabase SQL Editor
+7. Cliquez "Run"
+
+Les 11 tables seront créées automatiquement!
+
+
+ÉTAPE 4: REDÉMARRER L'APPLICATION
+----------------------------------
+
+1. Arrêtez le serveur (Ctrl+C)
+2. Lancez: npm run dev
+3. Allez à http://localhost:3000
+4. Essayez de vous connecter avec les identifiants:
+   
+   Email: admin@sttis.local
+   Password: Admin@123456
+
+
+ÉTAPE 5: VÉRIFIER QUE TOUT FONCTIONNE
+--------------------------------------
+
+✓ La page login charge sans erreurs
+✓ Vous pouvez vous connecter avec admin@sttis.local
+✓ Le dashboard se charge
+✓ Vous voyez les menus de navigation
+
+
+RÉSUMÉ DES FICHIERS
+-------------------
+
+.env.local.template   → Modèle d'environnement (copiez-le)
+DATABASE_SCHEMA.sql   → Script pour créer les tables
+SUPABASE_SETUP.md     → Guide détaillé complet
+credentials.json      → Identifiants de test
+
+Besoin d'aide? Lisez SUPABASE_SETUP.md pour plus de détails!

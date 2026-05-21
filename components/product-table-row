@@ -1,0 +1,70 @@
+'use client';
+
+import { Product } from '@/lib/supabase';
+import { getTeaTypeConfig } from '@/lib/tea-types';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Edit2, Trash2 } from 'lucide-react';
+import { cn } from '@/lib/utils';
+
+interface ProductTableRowProps {
+  product: Product;
+  onEdit: (product: Product) => void;
+  onDelete: (id: string) => void;
+}
+
+export function ProductTableRow({ product, onEdit, onDelete }: ProductTableRowProps) {
+  const config = getTeaTypeConfig(product.type);
+
+  return (
+    <tr className="border-b border-gray-200 hover:bg-gray-50 transition-colors">
+      {/* Left accent bar */}
+      <td className={cn('w-1', config.accentColor)} />
+
+      {/* Product Name */}
+      <td className="px-6 py-4 font-medium text-gray-900">{product.name}</td>
+
+      {/* Type Badge */}
+      <td className="px-6 py-4">
+        <Badge
+          className={cn('font-medium', config.badgeBgColor, config.badgeTextColor)}
+          variant="secondary"
+        >
+          {config.label}
+        </Badge>
+      </td>
+
+      {/* Origin */}
+      <td className="px-6 py-4 text-sm text-gray-700">{product.origin || '—'}</td>
+
+      {/* Harvest Date */}
+      <td className="px-6 py-4 text-sm text-gray-700">{product.harvest_date || '—'}</td>
+
+      {/* Price */}
+      <td className="px-6 py-4 font-semibold text-gray-900">${product.price}</td>
+
+      {/* Actions */}
+      <td className="px-6 py-4">
+        <div className="flex gap-2">
+          <Button
+            size="sm"
+            variant="outline"
+            onClick={() => onEdit(product)}
+            className="gap-2"
+          >
+            <Edit2 className="w-4 h-4" />
+            Edit
+          </Button>
+          <Button
+            size="sm"
+            variant="destructive"
+            onClick={() => onDelete(product.id)}
+            className="gap-2"
+          >
+            <Trash2 className="w-4 h-4" />
+          </Button>
+        </div>
+      </td>
+    </tr>
+  );
+}

@@ -1,0 +1,107 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                    STTIS - CONNEXION À SUPABASE                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+TROIS CLÉS À OBTENIR DE SUPABASE:
+═════════════════════════════════
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│  SUPABASE DASHBOARD                                                      │
+│  Settings → API                                                          │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  1️⃣  Project URL                                                        │
+│      ├─ Copie-la dans: NEXT_PUBLIC_SUPABASE_URL                        │
+│      └─ Exemple: https://xyzabc123.supabase.co                         │
+│                                                                          │
+│  2️⃣  Anon public                                                        │
+│      ├─ Copie-la dans: NEXT_PUBLIC_SUPABASE_ANON_KEY                   │
+│      └─ C'est la clé "anon" (public)                                    │
+│                                                                          │
+│  3️⃣  service_role secret                                               │
+│      ├─ Copie-la dans: SUPABASE_SERVICE_ROLE_KEY                       │
+│      └─ C'est la clé "service_role" (PRIVÉE)                            │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+
+
+OÙ COLLER LES CLÉS:
+═════════════════
+
+┌──────────────────────────────────────────────────────────────────────┐
+│  FICHIER: .env.local (à la racine du projet)                         │
+├──────────────────────────────────────────────────────────────────────┤
+│                                                                       │
+│  NEXT_PUBLIC_SUPABASE_URL=https://xyzabc123.supabase.co             │
+│                            ↑                                         │
+│                            Colle URL Supabase ici                    │
+│                                                                       │
+│  NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6...     │
+│                                  ↑                                   │
+│                                  Colle Anon Key ici                  │
+│                                                                       │
+│  SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6...         │
+│                            ↑                                         │
+│                            Colle Service Key ici                     │
+│                                                                       │
+└──────────────────────────────────────────────────────────────────────┘
+
+
+FLUX DE CONNEXION:
+═════════════════
+
+  1. APP DÉMARRE
+     ↓
+  2. LIT .env.local
+     ↓
+  3. CHARGE SUPABASE_URL et ANON_KEY
+     ↓
+  4. CRÉE CONNEXION À SUPABASE
+     ↓
+  5. EXÉCUTE DATABASE_SCHEMA.sql (crée 11 tables)
+     ↓
+  6. APP PRÊTE À UTILISER! ✓
+
+
+CHECKLIST:
+══════════
+
+☐ Aller sur https://supabase.com
+☐ Copier Project URL
+☐ Copier Anon Key
+☐ Copier Service Role Key
+☐ Créer fichier .env.local à la racine
+☐ Coller les 3 clés dans .env.local
+☐ Exécuter DATABASE_SCHEMA.sql depuis Supabase
+☐ Redémarrer: npm run dev
+☐ Tester connexion: http://localhost:3000/login
+
+
+FICHIERS À LIRE:
+═════════════════
+
+1. CONFIGURATION_RAPIDE.txt ← Commence ici!
+2. SUPABASE_SETUP.md        ← Guide détaillé
+3. .env.local.template      ← Copie-le en .env.local
+4. DATABASE_SCHEMA.sql      ← Exécute dans Supabase
+
+
+ERREURS COURANTS:
+═════════════════
+
+❌ "Missing Supabase environment variables"
+   → Vérifiez que .env.local existe et a les bonnes valeurs
+
+❌ "Cannot connect to database"
+   → Les clés sont mal copiées (espaces, tirets, etc.)
+
+❌ "Table users does not exist"
+   → Exécutez DATABASE_SCHEMA.sql dans Supabase
+
+✓ Redémarrez toujours après modifier .env.local!
+
+
+C'EST TOUT! 🎉
+================
+
+Votre app STTIS est maintenant connectée à Supabase!
